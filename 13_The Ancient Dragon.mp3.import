@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/13_The Ancient Dragon.mp3-7db4d3ec2e01a59c2373098a1257a464.mp3str"
+
+[deps]
+
+source_file="res://13_The Ancient Dragon.mp3"
+dest_files=[ "res://.import/13_The Ancient Dragon.mp3-7db4d3ec2e01a59c2373098a1257a464.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
