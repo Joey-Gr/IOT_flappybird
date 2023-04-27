@@ -11,8 +11,12 @@ config_version=4
 [application]
 
 config/name="FlappyBird"
-run/main_scene="res://World.tscn"
+run/main_scene="res://ButtonNode2D.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+Globalvariable="*res://Scripts/globalvariable.gd"
 
 [gui]
 
