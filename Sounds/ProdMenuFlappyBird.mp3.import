@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/ProdMenuFlappyBird.mp3-fdda7dadcec031d4468672ad128ce385.mp3str"
+
+[deps]
+
+source_file="res://Sounds/ProdMenuFlappyBird.mp3"
+dest_files=[ "res://.import/ProdMenuFlappyBird.mp3-fdda7dadcec031d4468672ad128ce385.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

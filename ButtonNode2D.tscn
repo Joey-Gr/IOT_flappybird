@@ -1,9 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Scripts/ButtonNode2D.gd" type="Script" id=1]
 [ext_resource path="res://Sprites/backgroundplay.jpeg" type="Texture" id=2]
 [ext_resource path="res://Sprites/startbutton.png" type="Texture" id=3]
 [ext_resource path="res://Fonts/ARCADECLASSIC.TTF" type="DynamicFontData" id=4]
+[ext_resource path="res://Sounds/ProdMenuFlappyBird.mp3" type="AudioStream" id=5]
+[ext_resource path="res://addons/wwise/runtime/nodes/ak_event_2d.gd" type="Script" id=6]
 
 [sub_resource type="DynamicFont" id=1]
 font_data = ExtResource( 4 )
@@ -26,7 +28,7 @@ scale = Vector2( 20, 20 )
 margin_left = 448.0
 margin_top = 128.0
 margin_right = 2110.0
-margin_bottom = 784.0
+margin_bottom = 925.0
 rect_scale = Vector2( 0.0921248, 0.0614875 )
 icon = ExtResource( 3 )
 
@@ -37,5 +39,12 @@ margin_right = 128.0
 margin_bottom = 536.0
 rect_scale = Vector2( 3.59149, 2.12174 )
 custom_fonts/font = SubResource( 1 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+autoplay = true
+
+[node name="AkEvent2D" type="Node2D" parent="."]
+script = ExtResource( 6 )
 
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]

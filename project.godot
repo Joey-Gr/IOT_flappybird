@@ -8,6 +8,22 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Reference",
+"class": "AK",
+"language": "GDScript",
+"path": "res://wwise/GeneratedSoundBanks/wwise_ids.gd"
+}, {
+"base": "Reference",
+"class": "AkUtils",
+"language": "GDScript",
+"path": "res://addons/wwise/runtime/helpers/ak_utils.gd"
+} ]
+_global_script_class_icons={
+"AK": "",
+"AkUtils": ""
+}
+
 [application]
 
 config/name="FlappyBird"
@@ -17,6 +33,13 @@ config/icon="res://icon.png"
 [autoload]
 
 Globalvariable="*res://Scripts/globalvariable.gd"
+WwiseSettings="*res://addons/wwise/editor/wwise_settings.gd"
+Wwise="*res://addons/wwise/bin/wwise-gdnative.gdns"
+Waapi="*res://addons/wwise/bin/waapi-gdnative.gdns"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/wwise/plugin.cfg" )
 
 [gui]
 
